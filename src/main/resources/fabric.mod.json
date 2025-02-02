@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "name_color",
+  "version": "${version}",
+  "name": "Name Color",
+  "description": "Adds basic markdown parsing to the Minecraft chat",
+  "authors": [],
+  "contact": {},
+  "license": "GPL-3.0",
+  "icon": "assets/name_color/icon.png",
+  "environment": "*",
+  "entrypoints": {
+	"client": [
+	  "dev.jolkert.name_color.client.NameColorClient"
+	],
+	"main": [
+	  "dev.jolkert.name_color.NameColor"
+	]
+  },
+  "mixins": [
+	"name_color.mixins.json",
+	{
+	  "config": "name_color.client.mixins.json",
+	  "environment": "client"
+	}
+  ],
+  "depends": {
+	"fabricloader": ">=${loader_version}",
+	"fabric": "*",
+	"minecraft": "${minecraft_version}"
+  }
+}
