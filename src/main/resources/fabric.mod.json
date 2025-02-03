@@ -10,19 +10,12 @@
   "icon": "assets/name_color/icon.png",
   "environment": "*",
   "entrypoints": {
-	"client": [
-	  "dev.jolkert.name_color.client.NameColorClient"
-	],
 	"main": [
 	  "dev.jolkert.name_color.NameColor"
 	]
   },
   "mixins": [
-	"name_color.mixins.json",
-	{
-	  "config": "name_color.client.mixins.json",
-	  "environment": "client"
-	}
+	"name_color.mixins.json"
   ],
   "depends": {
 	"fabricloader": ">=${loader_version}",

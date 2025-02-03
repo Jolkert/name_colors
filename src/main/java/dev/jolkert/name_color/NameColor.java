@@ -2,17 +2,13 @@ package dev.jolkert.name_color;
 
 import com.google.gson.*;
 import com.mojang.brigadier.Command;
-import com.mojang.brigadier.arguments.IntegerArgumentType;
 import com.mojang.brigadier.arguments.StringArgumentType;
-import dev.jolkert.name_color.command.CustomColorArgumentType;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import net.fabricmc.loader.api.FabricLoader;
-import net.minecraft.command.argument.ColorArgumentType;
 import net.minecraft.server.command.CommandManager;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.text.Text;
-import net.minecraft.util.Formatting;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -26,10 +22,8 @@ import java.util.UUID;
 public class NameColor implements ModInitializer
 {
 	public static Logger LOGGER = LoggerFactory.getLogger("name_color");
-
 	private static HashMap<UUID, Integer> colorMap = new HashMap<>();
-
-
+	
 	@Override
 	public void onInitialize()
 	{

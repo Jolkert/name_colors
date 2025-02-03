@@ -22,10 +22,11 @@ public class NameColorMixin
 					target = "Lnet/minecraft/entity/Entity;getDisplayName()Lnet/minecraft/text/Text;"
 			)
 	)
-	private static Text test(Entity sourceEntity, Operation<Text> originalOperation)
+	private static Text test(Entity sourceEntity, Operation<Text> o)
 	{
-		Text original = originalOperation.call(sourceEntity);
+		Text original = o.call(sourceEntity);
 		int color = NameColor.getNameColor(sourceEntity.getUuid());
+
 		return color != -1 ?
 				original.copy().setStyle(Style.EMPTY.withColor(color)) :
 				original;
