@@ -11,7 +11,7 @@
   "environment": "*",
   "entrypoints": {
 	"main": [
-	  "dev.jolkert.name_color.NameColor"
+	  "dev.jolkert.namecolor.NameColor"
 	]
   },
   "mixins": [

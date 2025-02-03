@@ -1,4 +1,4 @@
-package dev.jolkert.name_color;
+package dev.jolkert.namecolor;
 
 import com.google.gson.*;
 import com.mojang.brigadier.Command;
@@ -23,7 +23,7 @@ public class NameColor implements ModInitializer
 {
 	public static Logger LOGGER = LoggerFactory.getLogger("name_color");
 	private static HashMap<UUID, Integer> colorMap = new HashMap<>();
-	
+
 	@Override
 	public void onInitialize()
 	{

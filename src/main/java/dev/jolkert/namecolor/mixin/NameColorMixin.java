@@ -1,8 +1,8 @@
-package dev.jolkert.name_color.mixin;
+package dev.jolkert.namecolor.mixin;
 
 import com.llamalad7.mixinextras.injector.wrapoperation.Operation;
 import com.llamalad7.mixinextras.injector.wrapoperation.WrapOperation;
-import dev.jolkert.name_color.NameColor;
+import dev.jolkert.namecolor.NameColor;
 import net.minecraft.entity.Entity;
 import net.minecraft.network.message.MessageType;
 import net.minecraft.text.Style;
