@@ -4,6 +4,7 @@
   "package": "dev.jolkert.name_color.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+	"NameColorMixin"
   ],
   "injectors": {
 	"defaultRequire": 1
